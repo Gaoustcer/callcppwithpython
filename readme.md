@@ -1,1 +1,2 @@
 # This is a demo for python call Cpp Interface and use multi-thread
+there is no multi-thread in python for GIL when you call C++ interface with python and each thread will call the .so file.When multi-thread is launched,it indeed will occupy different physical cores but each thread will be blocked by system pending for there is a thread which can run on physics device with user code.If you check the system information with htop,you will find that other core will be occupied by system use.

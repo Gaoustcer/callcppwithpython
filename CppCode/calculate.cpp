@@ -12,7 +12,7 @@ extern "C"{
 }
 double Test::calculate(){
     double result = 0;
-    for(int i = 0;i < N*N*1000;i++){
+    for(int i = 0;i < N*N*100;i++){
         result += exp(sin(rand()))/cos(rand()); 
     }
     // default_random_engine e;
